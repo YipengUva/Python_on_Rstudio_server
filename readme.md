@@ -6,7 +6,7 @@ There is a huge ecosystem of machine learning (ML) and artificial intelligence (
 
 ## Necessary dependences on Rstudio server for Python programming
 
-The Linux server hosted the Rstudio server has already installed Python 3.7.6 and ```conda``` for package and environment management. Therefore, the only thing needed is to install the reticulate R package on Rstudio server for executing Python scripts. ```install.packages(“reticulate”)```
+The Linux server hosted the Rstudio server has already installed Python 3.7.6 and ```conda``` for package and environment management. Therefore, the only thing needed is to install the reticulate R package on Rstudio server for executing Python scripts. ```install.packages('reticulate')```
 
 ## Create a Python virtual environment using ```conda```
 
@@ -35,11 +35,8 @@ Create a R file named config_Python_env.R in your working directory. Copy and pa
 library(reticulate)
 
 Sys.setenv(RETICULATE_PYTHON="~/.conda/envs/myenv/bin/python") #Python
-
-use_python(“~/.conda/envs/myenv/bin/python”) # Which Python interpreter
-
-use_condaenv(“~/.conda/envs/myenv”) # Which Python virtual environment
-
+use_python("~/.conda/envs/myenv/bin/python") # Which Python interpreter
+use_condaenv("~/.conda/envs/myenv") # Which Python virtual environment
 repl_python() # enter interactive mode for running Python script
 
 ```
@@ -51,7 +48,6 @@ It is suggested to run the Python script in batch mode on the terminal. You need
 ```sh
 
 conda activate myenv 
-
 Python path_to_working_folder/your_python_script.py
 
 ```
@@ -70,7 +66,7 @@ In this section, we will go through an example, building classification ML model
 
 * Get the titanic data for the prediction task.
 
-    * Get the code on the terminal ```cp /home/ysong1/test_dummyML/ 0_prepare_titanic_data.R .```, then run the R script to generate the titanic data. 
+    * Get the code on the terminal ```cp /home/ysong1/test_dummyML/ 0_prepare_titanic_data.R .```, then run the R script to generate the titanic data. Please remember to set the working directory to the titanic_prediction folder before run the R script. 
 
     * Or directly copy the data on the terminal ```cp /home/ysong1/test_dummyML/data/titanic.csv ./data```
 
