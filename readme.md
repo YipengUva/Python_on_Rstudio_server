@@ -6,7 +6,7 @@ There is a huge ecosystem of machine learning (ML) and artificial intelligence (
 
 ## Necessary Dependencies for Python Programming on RStudio Server
 
-The Linux server that hosts RStudio Server already have Python 3.7.6 and conda installed for package and environment management. To execute Python scripts, you will only need to install the reticulate R package on RStudio Server by running the following command in the terminal: ```install.packages('reticulate')```
+The Linux server that hosts RStudio Server already have Python 3.7.6 and conda installed for package and environment management. To execute Python scripts, you will only need to install the reticulate R package on RStudio Server by running the following command in R: ```install.packages('reticulate')```
 
 ## Creating a Python Virtual Environment Using `conda`
 
