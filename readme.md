@@ -73,15 +73,15 @@ Let's walk through an example of building classification ML models to predict wh
 * Install the "dummyML" Python package, which is a Python package for automated data analysis in Python. To do this, create a virtual environment and install the package using the following commands:
 
     * ```sh
-        conda create --name mlenv python==3.7.6
-        conda activate mlenv        
+        conda create --name myenv python==3.7.6
+        conda activate myenv        
         pip install dummyML
       ``` 
 
 * Build ML models using the "dummyML" package installed in your virtual environment.
     * Get the script for testing dummyML package by ```cp /home/ysong1/test_dummyML/1_test_dummyML.py .``` on the terminal to copy the script to your project folder.
 
-    * Activate the interactive mode using the R script in the section **Using Python virutal environment on Rstudio Server**. Change myenv to mlenv.
+    * Activate the interactive mode using the R script in the section **Using Python virutal environment on Rstudio Server**. 
 
     * Run the script interactively and check the results.
 
