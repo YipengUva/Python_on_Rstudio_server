@@ -22,6 +22,8 @@ Maintaining the correct version of Python packages is crucial for data analysis 
 
 Check the online document https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html to learn more about managing virtual environment using ```conda```.
 
+You can also find the R functions encapsulated these bash commands in the R reticulate package https://rstudio.github.io/reticulate/reference/conda-tools.html.
+
 ## Using Your Python Virtual Environment on RStudio Server
 
 ### Interactive Mode
